@@ -1,0 +1,5 @@
+rack "config.ru" do
+  listen 9090
+  watch 'REVISION'
+end
+
