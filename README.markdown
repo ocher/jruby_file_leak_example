@@ -10,7 +10,7 @@ It seems that JRuby has a file descriptor leak and it is related to the Net::HTT
     # check number of pipes using:
     # lsof -p KIRK_PID | grep pipe | wc -l
     
-    # redeploy kirk:
+    # redeploy kirk (kirk should display info that it's redeploying app. There is some problem with this on OSX):
     touch REVISION
     # run ab once again, and check number of pipes
     # after a few redeploys there should be plenty of opened pipes
